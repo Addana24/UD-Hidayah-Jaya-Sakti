@@ -1,0 +1,27 @@
+/* Tema khusus panel admin UD Hidayah Jaya Sakti */
+
+/* Catatan: tema dasar Filament sudah dimuat oleh panel.
+   File ini hanya berisi override kustom. */
+
+/* Latar belakang halaman login/register menggunakan gambar toko */
+.fi-simple-layout {
+  min-height: 100vh;
+  background-image: url('/images/login-bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Tambahkan sedikit overlay agar konten tetap terbaca */
+.fi-simple-layout::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+}
+
+/* Pertegas heading brand pada dashboard */
+.fi-topbar .fi-brand {
+  font-weight: 700;
+}
