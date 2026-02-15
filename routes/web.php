@@ -3,5 +3,6 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('/admin');
+    // Gunakan redirect() untuk mengalihkan ke URL /admin
+    return redirect('/admin');
 });
