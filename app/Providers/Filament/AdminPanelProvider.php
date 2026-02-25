@@ -31,6 +31,7 @@ class AdminPanelProvider extends PanelProvider
             ->path('admin')
             ->login()
             ->brandName('UD.Hidayah Jaya Sakti')
+            ->databaseNotifications()
             ->colors([
                 'primary' => Color::Amber,
             ])
